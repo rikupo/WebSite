@@ -595,3 +595,10 @@ td {
 .imsize{
   width: 10pt;
 }
+
+.inline-block {
+    display: inline-block;      /* インラインブロック要素にする */
+    background-color:  #black;    /* 背景色指定 */
+    padding:  40px;             /* 余白指定 */
+    height: 50px;              /* 高さ指定 */
+}
