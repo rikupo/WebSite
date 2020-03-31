@@ -27,40 +27,55 @@
 
 <body class="single">
 
-  <div class= "myheader">
-    <div class="col-5 col-md2">
-        <a href="index.html"><img src="images/logo-text2.png" alt="img" class="fh5co_logo_width"/></a>
+
+    <div class= "myheader">
+      <div class="col-5 col-md2">
+          <a href="index.html"><img src="images/logo-text2.png" alt="img" class="fh5co_logo_width"/></a>
+      </div>
     </div>
-  </div>
 
-  <div class= "myheader-r">
-                  <div class="text-center d-inline-block">
-                      <a href="https://twitter.com/phoenix_robots" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
-                  </div>
-                  <!--<div class="d-inline-block text-center"><img src="images/country.png" alt="img" class="fh5co_country_width"/></div>-->
-                  <div class="clearfix"></div>
-  </div>
+    <div class="d-none d-lg-block">
+      <div class= "myheader-r">
+                      <div class="text-center d-inline-block">
+                          <a href="https://twitter.com/phoenix_robots" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
+                      </div>
+                      <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="d-block d-lg-none">
+      <!--
+       スマホ版でなにか表示したいときはここに記述
+      -->
+    </div>
 
-<!--
-  どれが表的な表示をしているのか
-  navbar-light 無罪　色の指定のみ
--->
-  <div class="bg-faded fh5co_padd_mediya padding_786">
+
+  <!--
+  ToDo:
+  !!開発終わったら各beta記述外す!!
+  スマホで表示してるときだけスクロールで上に消える仕様にする
+  Nav-barはやめて独自に記述する説
+  -->
+
+  <div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
       <div class="container padding_786">
           <nav class="navbar navbar-toggleable-md navbar-light ">
-              <div class="collapse navbar-collapse" id="a navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto ">
+              <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse"
+                      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                      aria-label="Toggle navigation"><span class="fa fa-bars"></span>
+              </button>
+
+              <a class="navbar-brand" href="#"><img src="images/logo-text2.png" alt="img" class="mobile_logo_width"/></a>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
                       <li class="nav-item">
-                          <!--
-                          ハイライトの色はstyle_1.cssの .nav-link:hover{background:#ec5404　で変更で変更可能
-                          -->
-                          <a class="nav-link" href="index.html"> Home <span class="sr-only">(curent)</span></a>
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item ">
+                      <li class="nav-item">
                           <a class="nav-link" href="aboutus.html"> About us <span class="a sr-only">(current)</span></a>
                       </li>
-                      <li class="nav-item ">
-                          <a class="nav-link active" href="aboutrm.html"> ロボマスとは <span class="sr-only">(current)</span></a>
+                      <li class="nav-item active ">
+                          <a class="nav-link" href="aboutrm.html"> ロボマスとは <span class="sr-only">(current)</span></a>
                       </li>
 
                       <li class="nav-item ">
@@ -69,15 +84,13 @@
                       <li class="nav-item ">
                           <a class="nav-link" href="sponsor.html"> Sponsor <span class="a sr-only">(current)</span></a>
                       </li>
+
                   </ul>
               </div>
-          </div>
-
-
           </nav>
       </div>
   </div>
-
+  <!-- header end -->
 <!-- header end -->
 <br>
 <br>
@@ -98,14 +111,14 @@
     <div class="col-md-12 text-center p-5">
       <h3>公式プロモーションムービー</h3>
       <br>
-      <iframe width="660" height="372" src="https://www.youtube.com/embed/NTIst6PBZPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width=95% height=60% src="https://www.youtube.com/embed/NTIst6PBZPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
     <div class="row">
       <div class="col-md-12 text-center p-5">
         <h3>公式ルール解説</h3>
         <br>
-        <iframe width="660" height="372" src="https://www.youtube.com/embed/WWAraXieygY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width=95% height=60% src="https://www.youtube.com/embed/WWAraXieygY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
 
       <div class="container-fluid pb-2 pt-4 paddding">

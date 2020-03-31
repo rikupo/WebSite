@@ -32,114 +32,184 @@
     </div>
   </div>
 
-  <div class= "myheader-r">
-                  <div class="text-center d-inline-block">
-                      <a href="https://twitter.com/phoenix_robots" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
-                  </div>
-                  <!--<div class="d-inline-block text-center"><img src="images/country.png" alt="img" class="fh5co_country_width"/></div>-->
-                  <div class="clearfix"></div>
+  <div class="d-none d-lg-block">
+    <div class= "myheader-r">
+                    <div class="text-center d-inline-block">
+                        <a href="https://twitter.com/phoenix_robots" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
+                    </div>
+                    <div class="clearfix"></div>
+    </div>
   </div>
+  <div class="d-block d-lg-none">
+    <!--
+     スマホ版でなにか表示したいときはここに記述
+    -->
+  </div>
+
 
 <!--
-  どれが表的な表示をしているのか
-  navbar-light 無罪　色の指定のみ
+ToDo:
+!!開発終わったら各beta記述外す!!
+スマホで表示してるときだけスクロールで上に消える仕様にする
+Nav-barはやめて独自に記述する説
 -->
-  <div class="bg-faded fh5co_padd_mediya padding_786">
-      <div class="container padding_786">
-          <nav class="navbar navbar-toggleable-md navbar-light ">
-              <div class="collapse navbar-collapse" id="a navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto ">
-                      <li class="nav-item">
-                          <!--
-                          ハイライトの色はstyle_1.cssの .nav-link:hover{background:#ec5404　で変更で変更可能
-                          -->
-                          <a class="nav-link" href="index.html"> Home <span class="sr-only">(curent)</span></a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link" href="aboutus.html"> About us <span class="a sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link" href="aboutrm.html"> ロボマスとは <span class="sr-only">(current)</span></a>
-                      </li>
 
-                      <li class="nav-item ">
-                          <a class="nav-link" href="Contact_us.html"> Contact <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link active" href="sponsor.html"> Sponsor <span class="a sr-only">(current)</span></a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
+<div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+    <div class="container padding_786">
+        <nav class="navbar navbar-toggleable-md navbar-light ">
+            <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="fa fa-bars"></span>
+            </button>
+
+            <a class="navbar-brand" href="#"><img src="images/logo-text2.png" alt="img" class="mobile_logo_width"/></a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="aboutus.html"> About us <span class="a sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="aboutrm.html"> ロボマスとは <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Contact_us.html"> Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="sponsor.html"> Sponsor <span class="a sr-only">(current)</span></a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
 
 
-          </nav>
-      </div>
-  </div>
+
+
 
 <!-- header end -->
 
 <div class="truebody">
 
 
-  <div class="container-fluid pb-2 pt-4 paddding">
-      <div class="container paddding">
-          <div class="mx-0 ">
-              <div class="animate-box sponsorstyle" data-animate-effect="fadeInLeft">
-                  <h3>スポンサー募集中</h3>
-                  <p>ロボマスでは非常に多くの費用がかかり<br>
-                    例としてロボット1台40万円が7台分，施設の維持管理費や遠征費用等<br>
-                    学生の出資のみで運営していくとこは大変厳しいです．<br>
-                    そこで我々の夢を応援していただけるスポンサーを募集しています．<br><br>
-                  </p>
+  <div class="d-none d-lg-block">
+
+      <div class="container-fluid pb-2 pt-4 paddding">
+          <div class="container paddding">
+              <div class="mx-0 ">
+                  <div class="animate-box sponsorstyle" data-animate-effect="fadeInLeft">
+                      <h3>スポンサー募集中</h3>
+                      <p>ロボマスでは非常に多くの費用がかかり<br>
+                        例としてロボット1台40万円が7台分，施設の維持管理費や遠征費用等<br>
+                        学生の出資のみで運営していくとこは大変厳しいです．<br>
+                        そこで我々の夢を応援していただけるスポンサーを募集しています．<br><br>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-fluid pb-2 pt-4 mx-4 paddding">
+          <div class="container paddding">
+              <div class="mx-0 ">
+                  <div class="animate-box sponsorstyle" data-animate-effect="fadeInLeft">
+                      <h3>メリット</h3>
+                      <p>プランに応じてWebページやチームウェア等にロゴを掲載<br>
+                        SNS等での情報発信等を行います<br>
+                        ロボマスは注目度が急上昇しており<br>
+                        国際大会では<b>160万人</b>がネット観戦しました．<br>
+                        そのためメディア露出を介して<br>国内外にPRできるチャンスが多くあります．
+                      </p>
+                  </div>
+                  <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                    <img src="images/sponsor-pic1.png" class="InContentImg3">
+                  </div>
               </div>
           </div>
       </div>
   </div>
 
-  <div class="container-fluid pb-2 pt-4 paddding">
-      <div class="container paddding">
-          <div class="mx-0 ">
-              <div class="animate-box sponsorstyle" data-animate-effect="fadeInLeft">
-                  <h3>メリット</h3>
-                  <p>プランに応じてWebページやチームウェア等にロゴを掲載<br>
-                    SNS等での情報発信等を行います<br>
-                    ロボマスは注目度が急上昇しており<br>
-                    国際大会では<b>160万人</b>がネット観戦しました．<br>
-                    そのためメディア露出を介して<br>国内外にPRできるチャンスが多くあります．
-                  </p>
-              </div>
-              <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
-                <img src="images/sponsor-pic1.png" class="InContentImg3">
-              </div>
-          </div>
-      </div>
+
+  <div class="d-block d-lg-none"> <!--スマホ版-->
+
+    <div class="container-fluid pb-2 pt-4 paddding">
+        <div class="container paddding">
+            <div class="mx-0 ">
+                <div class="animate-box sponsorstyle-sm" data-animate-effect="fadeInLeft">
+                    <h3>スポンサー募集中</h3>
+                    <p>ロボマスでは非常に多くの費用がかかり<br>
+                      例としてロボット1台40万円が7台分<br>施設の維持管理費や遠征費用等<br>
+                      学生の出資のみで運営していくとこは<br>
+                      大変厳しいです．<br><br>
+                      そこで我々の夢を応援していただける<br>
+                      スポンサーを募集しています．<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pb-2 pt-4 mx-4 paddding">
+        <div class="container paddding">
+            <div class="mx-0 ">
+                <div class="animate-box sponsorstyle-sm" data-animate-effect="fadeInLeft">
+                    <h3>メリット</h3>
+                    <p>プランに応じてWebページや<br>
+                      チームウェア等にロゴを掲載<br>
+                      SNS等での情報発信等を行います<br><br>
+                      ロボマスは注目度が<br>
+                      急上昇しており国際大会では<br>
+                      <b>160万人</b>
+                      <br>がネット観戦しました．<br>
+                      メディア露出を介して国内外に<br>PRできるチャンスが
+                      <br>多くあります．
+                    </p>
+                </div>
+                <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                  <img src="images/sponsor-pic1.png" class="InContentImg3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
   </div>
+
 
 
   <div class="abrmcnt">
   <div class="container animate-box">
     <div class="row" data-animate-effect="fadeInLeft">
       <div class="col-md-12 text-center p-5">
-        <h1>現在ご協賛いただいているスポンサー様</h1>
+        <h3>現在のスポンサー様</h3>
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-4 text-center p-5">
+        <h3>シルバースポンサー</h3>
+        <p><br>
+          Syse株式会社<br>
+          株式会社TKF
+        </p>
+      </div>
+      <div class="col-md-4 text-center p-5">
+        <h3>ブロンズスポンサー</h3>
+        <p><br>株式会社ジャムシステム</p>
+      </div>
+      <div class="col-md-4 text-center p-5">
+        <h3>検討中</h3>
+        <p><br>セキ技研<br>
+          合資会社福島木型
 
-      <div class="col-md-12 text-center p-5">
-        <h1>シルバースポンサー</h1>
-        <div class="inline-block">
-          <h2><strong>Syse株式会社</strong></h2><h3>（新潟県長岡市）</h3>
-        </div>
-        <div class="inline-block">
-          <h2><strong>株式会社TKF</strong></h2><h3>（東京都港区）</h3>
-        </div>
+        </p>
       </div>
-      <div class="col-md-12 text-center p-5">
-        <h1>ブロンズスポンサー</h1>
-        <div class="inline-block">
-          <h2><strong>株式会社ジャステム</strong></h2><h3>（新潟県長岡市）</h3>
-        </div>
-      </div>
+  </div>
   </div>
   </div>
   <div class="container-fluid pb-2 pt-4 paddding">
@@ -148,7 +218,7 @@
               <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
                   <h3>プラン詳細</h3>
                   <div class="text-center">
-                    <iframe src="pdf/Sponsor_Plan_PhoenixRobots.pdf" width="90%" height=580px></iframe>
+                    <iframe src="pdf/plan.pdf" width="90%" height=580px></iframe>
                   </div>
                   </p>
               </div>
@@ -161,7 +231,7 @@
           <div class="mx-0">
               <div class="animate-box aboutusstyle" data-animate-effect="fadeIn">
                   <div class="InButton text-center bt1">
-                    <a href='Contact_us.html'>連絡先</a>
+                    <a href='https://www.robomaster.jp/rm-guide/'>連絡先</a>
                   </div>
               </div>
 
@@ -173,7 +243,7 @@
 <div class="container-fluid fh5co_footer_right_reserved">
     <div class="container">
         <div class="row  ">
-            <div class="col-12 col-md-6 py-4"> c Copyright 2020, All rights reserved. Designed from Template by <a class="Reserved" href="https://freehtml5.co" title="Free HTML5 Bootstrap templates">FreeHTML5.co</a>. </div>
+            <div class="col-12 col-md-6 py-4"> © Copyright 2020, All rights reserved. Designed from Template by <a class="Reserved" href="https://freehtml5.co" title="Free HTML5 Bootstrap templates">FreeHTML5.co</a>. </div>
             <div class="col-12 col-md-6 spdp_right py-4">
                 <a href="#" class="footer_last_part_menu">Home</a>
                 <a href="Contact_us.html" class="footer_last_part_menu">About Us</a>

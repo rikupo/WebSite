@@ -27,7 +27,6 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 </head>
 
-<body class="single">
 
 
   <div class= "myheader">
@@ -36,59 +35,68 @@
     </div>
   </div>
 
-  <div class= "myheader-r">
-                  <div class="text-center d-inline-block">
-                      <a href="https://twitter.com/phoenix_robots" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
-                  </div>
-                  <!--<div class="d-inline-block text-center"><img src="images/country.png" alt="img" class="fh5co_country_width"/></div>-->
-                  <div class="clearfix"></div>
+  <div class="d-none d-lg-block">
+    <div class= "myheader-r">
+                    <div class="text-center d-inline-block">
+                        <a href="https://twitter.com/phoenix_robots" target="_blank" class="fh5co_display_table"><div class="fh5co_verticle_middle"><i class="fa fa-twitter"></i></div></a>
+                    </div>
+                    <div class="clearfix"></div>
+    </div>
   </div>
+  <div class="d-block d-lg-none">
+    <!--
+     スマホ版でなにか表示したいときはここに記述
+    -->
+  </div>
+
 
 <!--
-  どれが表的な表示をしているのか
-  navbar-light 無罪　色の指定のみ
+ToDo:
+!!開発終わったら各beta記述外す!!
+スマホで表示してるときだけスクロールで上に消える仕様にする
+Nav-barはやめて独自に記述する説
 -->
-  <div class="bg-faded fh5co_padd_mediya padding_786">
-      <div class="container padding_786">
-          <nav class="navbar navbar-toggleable-md navbar-light ">
-              <div class="collapse navbar-collapse" id="a navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto ">
-                      <li class="nav-item">
-                          <!--
-                          ハイライトの色はstyle_1.cssの .nav-link:hover{background:#ec5404　で変更で変更可能
-                          -->
-                          <a class="nav-link" href="index.html"> Home <span class="sr-only">(curent)</span></a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link active" href="aboutus.html"> About us <span class="a sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link" href="aboutrm.html"> ロボマスとは <span class="sr-only">(current)</span></a>
-                      </li>
 
-                      <li class="nav-item ">
-                          <a class="nav-link" href="Contact_us.html"> Contact <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item ">
-                          <a class="nav-link" href="sponsor.html"> Sponsor <span class="a sr-only">(current)</span></a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
+<div class="container-fluid bg-faded fh5co_padd_mediya padding_786">
+    <div class="container padding_786">
+        <nav class="navbar navbar-toggleable-md navbar-light ">
+            <button class="navbar-toggler navbar-toggler-right mt-3" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="fa fa-bars"></span>
+            </button>
 
+            <a class="navbar-brand" href="#"><img src="images/logo-text2.png" alt="img" class="mobile_logo_width"/></a>
 
-          </nav>
-      </div>
-  </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="aboutus.html"> About us <span class="a sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="aboutrm.html"> ロボマスとは <span class="sr-only">(current)</span></a>
+                    </li>
 
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Contact_us.html"> Contact <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="sponsor.html"> Sponsor <span class="a sr-only">(current)</span></a>
+                    </li>
 
-
-
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
 <!-- header end -->
 
-<br>
-<br>
-<br>
+
+
+<body class="single">
+
 
 <div class="abus animate-box" data-animate-effect="fadeIn">
 <div id="fh5co-title-box" style="background-image: url(images/rm1.jpg); background-position: 50%;" data-stellar-background-ratio="0.5">
@@ -96,11 +104,13 @@
     <div class="page-title">
         <div class="container">
           <div class="row">
-            <div class="col-md-2">
-              <img src="images/main-logo.png">
+
+            <div class="d-none d-lg-block">
+              <div class="col-md-2 mr-4">
+                <img src="images/main-logo.png">
+              </div>
             </div>
-            <div class="col-md-10">
-              <!-- <span>January 1, 2018</span>  -->
+            <div class="col-md-9">
               <h1>Phoenix Robots</h1>
               <h2>About Us</h1>
             </div>
@@ -112,126 +122,265 @@
 </div>
 </div>
 
-<div class="container-fluid pb-2 pt-4 paddding">
-    <div class="container paddding">
-        <div class="mx-0">
-            <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
-                <h3>Phoenix Robots</h3>
-                <p>
-                  最新テクノロジーとエンターテイメントを融合した<br>
-                  新たなロボット競技であるRoboMasterで<br>
-                  <b>世界優勝を目指す</b><br>
-                  学生チームです．<br>
-                  長岡市のシンボルでもあるフェニックスのように<br>
-                  新潟から世界へ羽ばたく．何度も復活し，必ずやり遂げる．<br>
-                  そんな想いを，チーム名とロゴに込めました．
-                </p>
-            </div>
+<div class="d-none d-lg-block">
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0">
+              <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                  <h3>Phoenix Robots</h3>
+                  <p>
+                    最新テクノロジーとエンターテイメントを融合した<br>
+                    新たなロボット競技であるRoboMasterで<br>
+                    <b>世界優勝を目指す</b><br>
+                    学生チームです．<br>
+                    長岡市のシンボルでもあるフェニックスのように<br>
+                    新潟から世界へ羽ばたく．何度も復活し，必ずやり遂げる．<br>
+                    そんな想いを，チーム名とロゴに込めました．
+                  </p>
+              </div>
 
-                <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
-                  <img src="images/main-logo.png" class="InContentImg">
-                </div>
-
-
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<div class="container-fluid pb-2 pt-4 paddding">
-    <div class="container paddding">
-        <div class="mx-0 aboutusstyle">
-            <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
-                <h3>チーム構成</h3>
-                <p>
-Phoenix Robotsは<br>
-<a  href="https://www.nagaokaut.ac.jp/" class="InContentLink">長岡技術科学大学</a>，
-<a  href="https://www.niigata-u.ac.jp/" class="InContentLink">新潟大学</a>，
-<a  href="http://www.nagaoka-ct.ac.jp/" class="InContentLink">長岡高専 </a>など <br>
-新潟県内のものづくりを学ぶ学生・OBが約30人集結した，任意団体です．
-                </p>
-            </div>
-
-                <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
-                  <img src="images/MAP.PNG" class="InContentImg2">
-                </div>
-
-
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<div class="container-fluid pb-2 pt-4 paddding">
-    <div class="container paddding">
-        <div class="mx-0 aboutusstyle">
-            <div class="animate-box aboutusstyle ab2" data-animate-effect="fadeInLeft">
-                <h3>技術力</h3>
-                <p>
-<b>NHK学生ロボコン</b>、<b>NHK高専ロボコン</b>、<b>ロボカップ</b>、<b>廃炉創造ロボコン</b><br>
-などの多様なロボットコンテストを経験した新潟県内の学生達が<br>今，初めて１つのチームとなって世界を目指します．
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<div class="container-fluid pb-2 pt-4 paddding">
-    <div class="container paddding">
-        <div class="mx-0 aboutusstyle">
-            <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
-                <h3>拠点</h3>
-                <p>
-                  長岡技術科学大学に隣接する施設、長岡新産業創造センター（通称：NBIC）を拠点に<br>
-                  ３月から活動を開始します．<br>
-                  (所在地：〒940-2135 新潟県長岡市深沢町2085-16)
-                  <div class="InButton text-center bt3">
-                    <a href='https://nbic.jp/'>NBIC公式サイト</a>
+                  <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                    <img src="images/main-logo.png" class="InContentImg">
                   </div>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<br>
-<br>
-<br>
 
-<div class="container-fluid pb-2 pt-4 paddding">
-    <div class="container paddding">
-        <div class="mx-0 aboutusstyle">
-            <div class="animate-box aboutusstyle" data-animate-effect="fadeIn">
-                <h3>夢</h3>
-                <p>
-                  <br><b>RoboMasterで世界優勝をする</b><br><br>
-                  Phoenix Robotsはそれを目的に設立されました．<br>
-                  しかし我々の夢は、それだけに留まりません．<br><br>
-                  <b>RoboMaster</b>というロボット競技を通して<br>
-                  学生に様々な経験をして学んでほしい．<br>
-                  次世代を担う人材を育てたい．<br>
-                  優れた人材にスポットライトを当てたい．<br><br>
-                  そんな狙いもあります．<br>
-                  そして、この新潟を、ものづくりの力で盛り上げたい．<br>
-                  そんな夢の実現のために、新潟から世界に挑戦していきます．<br>
-                  <div class="InButton text-center bt3">
-                    <a href="sponsor.html">夢を応援する</a>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 aboutusstyle">
+              <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                  <h3>チーム構成</h3>
+                  <p>
+  Phoenix Robotsは<br>
+  <a  href="https://www.nagaokaut.ac.jp/" class="InContentLink">長岡技術科学大学</a>，
+  <a  href="https://www.niigata-u.ac.jp/" class="InContentLink">新潟大学</a>，
+  <a  href="http://www.nagaoka-ct.ac.jp/" class="InContentLink">長岡高専 </a>など <br>
+  新潟県内のものづくりを学ぶ学生・OBが約30人集結した，任意団体です．
+                  </p>
+              </div>
+
+                  <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                    <img src="images/MAP.PNG" class="InContentImg2">
                   </div>
-                </p>
-            </div>
-        </div>
-    </div>
+
+
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 aboutusstyle">
+              <div class="animate-box aboutusstyle ab2" data-animate-effect="fadeInLeft">
+                  <h3>NHK学生ロボコン</h3>
+                  <p>
+  <b>NHK高専ロボコン</b>、<b>ロボカップ</b>、<b>廃炉創造ロボコン</b><br>
+  などの多様なロボットコンテストを経験した新潟県内の学生達が<br>今，初めて１つのチームとなって世界を目指します．
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 aboutusstyle">
+              <div class="animate-box aboutusstyle" data-animate-effect="fadeInLeft">
+                  <h3>拠点</h3>
+                  <p>
+                    長岡技術科学大学に隣接する施設、長岡新産業創造センター（通称：NBIC）を拠点に<br>
+                    ３月から活動を開始します．<br>
+                    (所在地：〒940-2135 新潟県長岡市深沢町2085-16)
+                    <div class="InButton text-center bt3">
+                      <a href='https://nbic.jp/'>NBIC公式サイト</a>
+                    </div>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 aboutusstyle">
+              <div class="animate-box aboutusstyle" data-animate-effect="fadeIn">
+                  <h3>夢</h3>
+                  <p>
+                    <br><b>RoboMasterで世界優勝をする</b><br><br>
+                    Phoenix Robotsはそれを目的に設立されました．<br>
+                    しかし我々の夢は、それだけに留まりません．<br><br>
+                    <b>RoboMaster</b>というロボット競技を通して<br>
+                    学生に様々な経験をして学んでほしい．<br>
+                    次世代を担う人材を育てたい．<br>
+                    優れた人材にスポットライトを当てたい．<br><br>
+                    そんな狙いもあります．<br>
+                    そして、この新潟を、ものづくりの力で盛り上げたい．<br>
+                    そんな夢の実現のために、新潟から世界に挑戦していきます．<br>
+                    <div class="InButton text-center bt3">
+                      <a href="sponsor.html">夢を応援する</a>
+                    </div>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
+
+<!-- スマホ版　主に改行変更-->
+<div class="d-block d-lg-none">
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0">
+              <div class="animate-box aboutusstyle-sm" data-animate-effect="fadeInLeft">
+                  <h3>Phoenix Robots</h3>
+                  <p>
+                    最新テクノロジーと<br>
+                    エンターテイメントが融合された<br>
+                    新たなロボット競技であるRoboMasterで<br>
+                    <b>世界優勝を目指す</b><br>
+                    学生チームです．<br><br>
+                    長岡市のシンボルでもある<br>
+                    フェニックスのように<br>
+                    新潟から世界へ羽ばたく<br>
+                    何度も復活し，必ずやり遂げる．<br>
+                    そんな想いを，チーム名と<br>
+                    ロゴに込めました．
+                  </p>
+              </div>
+
+                  <div class="animate-box aboutusstyle-sm" data-animate-effect="fadeInLeft">
+                    <img src="images/main-logo.png" class="InContentImg">
+                  </div>
+
+
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 boutusstyle-sm">
+              <div class="animate-box aboutusstyle-sm" data-animate-effect="fadeInLeft">
+                  <h3>チーム構成</h3>
+                  <p>
+  Phoenix Robotsは<br><br>
+  <a  href="https://www.nagaokaut.ac.jp/" class="InContentLink">長岡技術科学大学</a><br>
+  <a  href="https://www.niigata-u.ac.jp/" class="InContentLink">新潟大学</a><br>
+  <a  href="http://www.nagaoka-ct.ac.jp/" class="InContentLink">長岡高専 </a><br><br>
+  など，新潟県内のものづくりを学ぶ学生・OBが約30人集結した，任意団体です．
+                  </p>
+              </div>
+
+                  <div class="animate-box boutusstyle-sm" data-animate-effect="fadeInLeft">
+                    <img src="images/MAP.PNG" class="InContentImg2">
+                  </div>
+
+
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 boutusstyle-sm">
+              <div class="animate-box aboutusstyle-sm ab2" data-animate-effect="fadeInLeft">
+                  <h3>豊富な経験</h3>
+                  <p>
+  <h2>NHK高専ロボコン</h2><br>
+  <h2>ロボカップ</h2><br>
+  <h2>廃炉創造ロボコン</h2><br>
+  などの多様なロボットコンテストを経験した新潟県内の学生達が今，初めて１つのチームとなって世界を目指します．
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 boutusstyle-sm">
+              <div class="animate-box aboutusstyle-sm" data-animate-effect="fadeInLeft">
+                  <h3>拠点</h3>
+                  <p>
+                    長岡技術科学大学に隣接する施設、長岡新産業創造センター（通称：NBIC）を拠点に<br>
+                    ３月から活動を開始します．<br>
+                    (所在地：〒940-2135 新潟県長岡市深沢町2085-16)
+                    <div class="InButton text-center bt3">
+                      <a href='https://nbic.jp/'>NBIC公式サイト</a>
+                    </div>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+  <div class="container-fluid pb-2 pt-4 paddding">
+      <div class="container paddding">
+          <div class="mx-0 boutusstyle-sm">
+              <div class="animate-box aboutusstyle-sm" data-animate-effect="fadeIn">
+                  <h3>夢</h3>
+                  <p>
+                    <br><b>RoboMasterで<br>世界優勝をする</b><br><br>
+                    Phoenix Robotsは<br>
+                    それを目的に設立されました．<br>
+                    しかし我々の夢は<br>
+                    それだけに留まりません．<br><br>
+                    <h2>RoboMaster</h2><br>
+                    というロボット競技を通して<br>
+                    学生に様々な経験をして学んでほしい．<br>
+                    次世代を担う人材を育てたい．<br>
+                    優れた人材にスポットライトを当てたい．<br><br>
+                    そんな狙いもあります．<br><br>
+                    そして、この新潟を<br>
+                    ものづくりの力で盛り上げたい．<br>
+                    そんな夢の実現のために<br>
+                    新潟から世界に挑戦していきます．<br><br>
+                    <div class="InButton text-center bt3">
+                      <a href="sponsor.html">夢を応援する</a>
+                    </div>
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
 
 
 
@@ -241,7 +390,7 @@ Phoenix Robotsは<br>
 <div class="container-fluid fh5co_footer_right_reserved">
     <div class="container">
         <div class="row  ">
-            <div class="col-12 col-md-6 py-4"> c Copyright 2020, All rights reserved. Designed from Template by <a class="Reserved" href="https://freehtml5.co" title="Free HTML5 Bootstrap templates">FreeHTML5.co</a>. </div>
+            <div class="col-12 col-md-6 py-4"> © Copyright 2020, All rights reserved. Designed from Template by <a class="Reserved" href="https://freehtml5.co" title="Free HTML5 Bootstrap templates">FreeHTML5.co</a>. </div>
             <div class="col-12 col-md-6 spdp_right py-4">
                 <a href="#" class="footer_last_part_menu">Home</a>
                 <a href="Contact_us.html" class="footer_last_part_menu">About Us</a>

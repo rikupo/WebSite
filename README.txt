@@ -1,4 +1,26 @@
 
+スマホ対応版(2020.3.29 ver3)
+
+実装概要
+html + css(style1.css & bootstrap.css) + jQ(テンプレママ)
+Windows10 Chrome と OSX Chrome Safariで開発
+スマホは上記ブラウザの開発ツールで動作確認
+
+
+やること
+画像追加(現状だと3枚位の使い回し)
+ロボマスとはの動画欄のサイズのスマホ対応
+いまはスマホ版とPC版で違うコードを書いてるけど1コードでも
+レスポンシブル行けるらしいのでそれの検討
+
+バグ
+Contactでフッタが表示されない 
+Windows Chromeなどの一部ブラウザで右端が見切れる
+OSX Chrome,SafariではOK
+
+
+以下はてんぷれ引用元のRead.me
+
 TITLE: 
 24 News - 100% Fully Responsive Free HTML5 Bootstrap Template
 

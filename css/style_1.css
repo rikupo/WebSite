@@ -45,6 +45,26 @@ td {
   border-radius: 8px;
 }
 
+.contact-small{
+	font-size: 15pt;
+}
+.contact-list-sm{
+  margin-top: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #ec5404;
+  font-weight: 800;
+  font-size: 25pt;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: .4s;
+}
+
+
 .fixed-footer{
   position: fixed;
 }
@@ -68,9 +88,28 @@ td {
   font-size: 40pt;
 }
 
+.sponsorstyle-sm{
+  text-align: center;
+  font-size: 15pt;
+  color: white;
+}
+
+.sponsorstyle-sm b{
+  font-family: "Teko";
+  color: white;
+  font-weight: 200;
+  font-size: 25pt;
+}
+
+.sponsorstyle-sm h3{
+    font-family: "Teko";
+  color: #ec5402;
+  font-size: 30pt;
+}
+
 .aboutusstyle{
     text-align: center;
-  font-size: 20pt;
+  font-size: 14pt;
 }
 
 .aboutusstyle b{
@@ -89,7 +128,31 @@ td {
 .aboutusstyle h3{
     font-family: "Teko";
   color: #ec5402;
-  font-size: 40pt;
+  font-size: 30pt;
+}
+
+.aboutusstyle-sm{
+    text-align: center;
+  font-size: 14pt;
+}
+
+.aboutusstyle-sm b{
+  font-family: "Teko";
+  color: white;
+  font-weight: 200;
+  font-size: 30pt;
+}
+.aboutusstyle-sm .ab2 b{
+  font-family: "Teko";
+  color: white;
+  font-weight: 200;
+  font-size: 25pt;
+}
+
+.aboutusstyle-sm h3{
+    font-family: "Teko";
+  color: #ec5402;
+  font-size: 30pt;
 }
 
 .InContentImg{
@@ -98,12 +161,12 @@ td {
 }
 
 .InContentImg2{
-  width: 800px;
+  width: 95%;
   text-align: center;
 }
 
 .InContentImg3{
-  width: 700px;
+  width: 95%;
   text-align: center;
 }
 
@@ -253,9 +316,8 @@ td {
   color: #ec5402;
 }
 .contact_us_bg_img{
-  background:url(../images/photo-1449157291145-7efd050a4d0e-578x362.jpg);
-  top: 50pt;
-  width: 110%;
+  background:url(../images/rm2.jpg);
+  width: 100%;
   padding:70px 0;
   background-size:cover
 }
@@ -320,7 +382,7 @@ td {
 
 .single .abus #fh5co-title-box{
   position:relative;
-  height:300px;
+  height:28rem;
   width:100%
 }
 
@@ -441,6 +503,158 @@ td {
   -ms-border-radius:0%;
   border-radius:0%
 }
+
+
+
+#fh5co-title-box-sm #fh5co-title-box-sm-rm{
+  width:38.2%;
+  z-index:555;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center
+}
+
+.single #fh5co-title-box-sm{
+  position:relative;
+  height:36rem;
+  width:100%
+}
+
+
+.single .abrm #fh5co-title-box-sm{
+	background-repeat: no-repeat;
+	background-size: cover;
+  position:relative;
+  height:300px;
+  width:100%
+}
+
+.single .abus #fh5co-title-box-sm{
+  position:relative;
+  height:300px;
+  width:100%
+}
+
+#fh5co-title-box-sm .overlay{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:10;
+  background:rgba(0,0,0,0.5)
+}
+.navitem.logoimage{
+      width:1px;
+
+}
+
+.light-subtitle{
+  color: white;
+}
+.fuchidori {
+  color: #000;
+  -webkit-text-stroke: 1.5px black;
+  text-stroke: 1.5px black;
+}
+
+
+.fuchidori1 {
+  color: #ec5404;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+
+#fh5co-title-box-sm .page-title{z-index:12;position:absolute;bottom:0;padding:0px}
+.single #fh5co-title-box-sm .page-title{width:100%;margin:0 auto;text-align:center;;}
+
+#fh5co-title-box-sm .page-title h2{
+  color:white;
+  font-weight:600;
+}
+.single #fh5co-title-box-sm .page-title h2{
+    font-size:60px;
+    font-family: 'MS PMincho';
+}
+
+/*memo title font style*/
+#fh5co-title-box-sm .page-title h1{
+  font-weight:600;
+  /* transform: scale(1.5,0.9); */
+  font-family: "Teko" ;
+}
+
+.abrm #fh5co-title-box-sm .page-title h1{
+  font-weight:600;
+  transform: scale(1,1);
+  color: white;
+  font-family: "Teko" ;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+.abrmcnt p{
+  font-size: 20px;
+}
+.abrmcnt a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+    transition: .4s;
+}
+
+.abrmcnt a:hover{
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+.abus #fh5co-title-box-sm .page-title h1{
+  text-align: left;
+  font-weight:600;
+  transform: scale(1,1);
+  color: white;
+  font-family: "Teko" ;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+.abus #fh5co-title-box-sm .page-title h2{
+  text-align: left;
+  font-weight:600;
+  transform: scale(1,1);
+  color: white;
+  font-family: "Teko" ;
+  -webkit-text-stroke: 1px black;
+  text-stroke: 1px black;
+}
+
+.single #fh5co-title-box-sm .page-title h1{
+  font-size:72px;
+}
+
+#fh5co-title-box-sm .page-title>span{
+  display:block;
+  color:rgba(255,255,255,0.5);
+  text-transform:uppercase;
+  font-size:15px;
+  letter-spacing:.05em;
+  margin-bottom:10px
+}
+#fh5co-title-box-sm .page-title img{
+  margin-bottom:30px;
+  width:180px;
+  -webkit-border-radius:0%;
+  -moz-border-radius:0%;
+  -ms-border-radius:0%;
+  border-radius:0%
+}
+
+
+
 #fh5co-single-content{z-index:999;background:white}
 #fh5co-single-content p,#fh5co-single-content ul li{font-size:1.05rem}
 /*# sourceMappingURL=style_1.css.map */
@@ -452,7 +666,7 @@ td {
 .sponsorbg{
   background-color: black;
 }
-.truebody { padding-top: 70px; }
+.truebody { padding-top: 60px; }
 
 .InButton {
   font-size: 20pt;
@@ -594,11 +808,4 @@ td {
 
 .imsize{
   width: 10pt;
-}
-
-.inline-block {
-    display: inline-block;      /* インラインブロック要素にする */
-    background-color:  #black;    /* 背景色指定 */
-    padding:  40px;             /* 余白指定 */
-    height: 50px;              /* 高さ指定 */
 }
