@@ -3940,7 +3940,7 @@ tbody.collapse.show {
   display: inline-block;
   padding-top: .25rem;
   padding-bottom: .25rem;
-  margin-right: 1rem;
+  margin-right: 5rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -3983,8 +3983,8 @@ tbody.collapse.show {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
-  background: transparent;
-  border: 1px solid transparent;
+  background: #ec5404;
+  border: 1px solid black;
   border-radius: 0.25rem;
 }
 
@@ -3997,7 +3997,7 @@ tbody.collapse.show {
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
-  content: "";
+  content: "s";
   background: no-repeat center center;
   -webkit-background-size: 100% 100%;
           background-size: 100% 100%;
@@ -4334,7 +4334,7 @@ tbody.collapse.show {
 .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover,
 .navbar-light .navbar-toggler:focus,
 .navbar-light .navbar-toggler:hover {
-  color: red;
+  color: black;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -6094,8 +6094,8 @@ button.close {
 
 /*memo navbar background color*/
 .bg-faded {
-  width: 105%;
-  position: fixed;
+  width: 100%;
+  position: relative;
   z-index: 2;
   background-color: rgba(0,0,0,0.99);
 }
